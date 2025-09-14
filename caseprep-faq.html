@@ -1,94 +1,164 @@
-<!DOCTYPE html>
+X<!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
   <title>Probate Case Prep – FAQ</title>
   <style>
-    body {
-      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Arial, sans-serif;
-      margin: 0;
-      padding: 20px;
-      line-height: 1.6;
-      background: #fafafa;
-      color: #333;
+    :root{
+      --bg:#fafafa; --card:#fff; --ink:#222; --muted:#666; --line:#e6e6e6;
     }
-    h1 {
-      font-size: 1.8rem;
-      margin-bottom: 10px;
+    *{box-sizing:border-box}
+    body{
+      margin:0; background:var(--bg); color:var(--ink);
+      font:16px/1.6 -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Arial,sans-serif;
     }
-    .sub {
-      color: #555;
-      margin-bottom: 20px;
+    .wrap{max-width:980px; margin:24px auto 56px; padding:0 16px}
+    h1{font-size:1.9rem; margin:.25rem 0 .5rem}
+    .sub{color:var(--muted); margin:0 0 1rem}
+    .note{font-size:.9rem; color:var(--muted); margin-top:20px}
+    .group-title{margin:18px 4px 8px; font-size:1.05rem; font-weight:700}
+    /* Cards */
+    details.card{
+      background:var(--card); border:1px solid var(--line);
+      border-radius:12px; margin:10px 0; padding:12px 14px;
+      box-shadow:0 1px 0 rgba(0,0,0,.03);
     }
-    details {
-      border: 1px solid #e6e6e6;
-      border-radius: 10px;
-      background: #fff;
-      margin: 10px 0;
-      padding: 12px 16px;
-    }
-    summary {
-      font-weight: 600;
-      cursor: pointer;
-      outline: none;
-    }
-    details[open] {
-      background: #f7f7f7;
-    }
-    p {
-      margin: 8px 0;
-    }
-    strong {
-      color: #222;
-    }
+    summary{cursor:pointer; font-weight:600; outline:none}
+    details[open]{background:#f7f7f7}
+    /* Nested Qs */
+    .qa{margin:10px 0 2px 0; padding:0}
+    details.qa{border:none; background:transparent; padding:8px 0 0}
+    details.qa summary{font-weight:600; color:#111}
+    details.qa p{margin:.4rem 0 .8rem}
+    /* Spacing for nested area */
+    .pad{padding-left:8px}
+    /* Small screens */
+    @media (max-width:520px){ h1{font-size:1.6rem} }
   </style>
 </head>
 <body>
-  <h1>Probate Case Prep – Frequently Asked Questions</h1>
-  <p class="sub">This course helps you organize facts, evidence, and strategy inputs so you’re ready for court or a lawyer consultation. It is <strong>not</strong> petition drafting or legal advice.</p>
+  <div class="wrap">
+    <h1>Probate Case Prep – Frequently Asked Questions</h1>
+    <p class="sub">
+      This course helps you <strong>prepare for court</strong> (or an attorney consult) by organizing facts, evidence, and a clean case binder.
+      It is <strong>not</strong> petition drafting or legal advice.
+    </p>
 
-  <!-- About the Course -->
-  <details>
-    <summary>About the Course</summary>
-    <p><strong>What is Probate Case Prep?</strong><br>
-    It’s a pre-petition prep course: you’ll learn to understand the process, evaluate valid legal grounds, and assemble a clean case binder (timeline, documents, witness notes). It does <strong>not</strong> teach petition writing — that’s covered in the flagship Petition course.</p>
+    <!-- ABOUT THE COURSE -->
+    <div class="group-title">About the Course</div>
+    <details class="card">
+      <summary>What is Probate Case Prep? How is it different from the free course?</summary>
+      <div class="pad">
+        <p>The free course helps you decide if you’re in the right place (probate vs. probate litigation) and introduces standing and deadlines. <em>Case Prep</em> is the next step: you’ll build a dated timeline, organize evidence, and map potential legal grounds so you’re ready for action.</p>
+      </div>
+    </details>
 
-    <p><strong>Who is this course for?</strong><br>
-    For people considering probate litigation in California who want to clarify if they have a case and organize evidence before meeting an attorney or filing pro per.</p>
-  </details>
+    <details class="card">
+      <summary>Who is this course for?</summary>
+      <div class="pad">
+        <p>People in California who think they may have a probate litigation case and want clarity and organization before meeting a lawyer or filing pro per.</p>
+      </div>
+    </details>
 
-  <!-- Scope & Limitations -->
-  <details>
-    <summary>Scope & Limitations</summary>
-    <p><strong>Does this course guarantee I have a case?</strong><br>
-    No. This course is educational only. It helps you prepare and think critically, but only the court can decide standing, validity, and outcome.</p>
+    <details class="card">
+      <summary>What will I have by the end?</summary>
+      <div class="pad">
+        <ul>
+          <li>A clean timeline of key events.</li>
+          <li>Organized records (medical, financial, communications) tied to potential grounds.</li>
+          <li>A simple witness list and document index.</li>
+          <li>Questions to take into a lawyer consult—or to continue DIY next steps.</li>
+        </ul>
+      </div>
+    </details>
 
-    <p><strong>Will this course save me money?</strong><br>
-    Yes, often. Attorneys charge $350–$500/hour to sort through your documents. By coming prepared, you save them time — which saves you money — and you’re in control of your case story.</p>
+    <!-- SCOPE & LIMITATIONS -->
+    <div class="group-title">Scope &amp; Limitations</div>
+    <details class="card">
+      <summary>Is this legal advice? Will you review my personal documents?</summary>
+      <div class="pad">
+        <p>No. This is an educational course. I don’t review personal files, give legal advice, or predict outcomes. For case-specific guidance, consult a licensed probate attorney.</p>
+      </div>
+    </details>
 
-    <p><strong>Will this course show me how to draft petitions?</strong><br>
-    No. That’s covered in the flagship Petition course.</p>
-  </details>
+    <details class="card">
+      <summary>Does Case Prep guarantee I have a case or that I will win?</summary>
+      <div class="pad">
+        <p>No. Case Prep helps you assess potential grounds and organize evidence. Only the court can decide standing, validity, and outcome.</p>
+      </div>
+    </details>
 
-  <!-- Technical & Logistics -->
-  <details>
-    <summary>Technical & Logistics</summary>
-    <p><strong>Do you provide tech support?</strong><br>
-    No. I can’t fix your computer, printer, or internet connection. Please contact your device provider or a local service for tech issues.</p>
+    <details class="card">
+      <summary>Do you calculate my statute of limitations or draft my petition?</summary>
+      <div class="pad">
+        <p>No. We discuss timing at a high level so you understand urgency, but we don’t compute deadlines or draft filings. Petition drafting is covered in the separate flagship course.</p>
+      </div>
+    </details>
 
-    <p><strong>What materials will I need?</strong><br>
-    A computer, internet access, and a binder or folder system (physical or digital) to organize documents, evidence, and notes.</p>
-  </details>
+    <!-- TECH / LOGISTICS -->
+    <div class="group-title">Technical / Logistics</div>
+    <details class="card">
+      <summary>How is the course delivered? How long is access?</summary>
+      <div class="pad">
+        <p>Self-paced videos and templates. Access terms appear on the checkout page at launch.</p>
+      </div>
+    </details>
 
-  <!-- Legal & Education Clarification -->
-  <details>
-    <summary>Legal & Education Clarification</summary>
-    <p><strong>Is this legal advice?</strong><br>
-    No. I am not a lawyer, and this course does not provide legal advice. It’s purely educational.</p>
+    <details class="card">
+      <summary>Can you fix my computer, printer, or internet?</summary>
+      <div class="pad">
+        <p>No—platform issues are handled by FreshLearn support. For device or internet problems, please use local tech support.</p>
+      </div>
+    </details>
 
-    <p><strong>What if I need legal advice?</strong><br>
-    Please consult a qualified probate attorney for guidance about your specific situation.</p>
-  </details>
+    <details class="card">
+      <summary>What if videos won’t play or downloads won’t open?</summary>
+      <div class="pad">
+        <p>Try another browser (Chrome/Safari), disable extensions/ad-blockers, refresh, or use a different device. If it persists, contact FreshLearn support.</p>
+      </div>
+    </details>
+
+    <!-- ORGANIZATION & EVIDENCE -->
+    <div class="group-title">Organizing Evidence</div>
+    <details class="card">
+      <summary>What counts as useful evidence for my binder?</summary>
+      <div class="pad">
+        <p>Depends on the ground. Examples: dated emails/texts; medical records showing decline; financial statements or account activity; sudden document changes; witness notes with dates and context.</p>
+      </div>
+    </details>
+
+    <details class="card">
+      <summary>How should I handle sensitive information?</summary>
+      <div class="pad">
+        <p>Redact personal numbers on shared copies, keep originals secure, and label folders clearly. Follow any privacy rules or protective orders that apply.</p>
+      </div>
+    </details>
+
+    <details class="card">
+      <summary>Do you provide checklists or templates?</summary>
+      <div class="pad">
+        <p>Yes—simple timeline, binder index, and evidence-mapping worksheets to help you stay organized.</p>
+      </div>
+    </details>
+
+    <!-- NEXT STEPS -->
+    <div class="group-title">Timing &amp; Next Steps</div>
+    <details class="card">
+      <summary>Will this help with a lawyer consultation?</summary>
+      <div class="pad">
+        <p>That’s the goal. A clean timeline and document set can shorten paid consult time and improve the quality of advice.</p>
+      </div>
+    </details>
+
+    <details class="card">
+      <summary>What should I do after Case Prep?</summary>
+      <div class="pad">
+        <p>Use your binder to (1) consult a probate attorney, (2) continue into the petition course when available, or (3) decide not to proceed. The value is clarity before spending more time or money.</p>
+      </div>
+    </details>
+
+    <p class="note"><strong>Disclaimer:</strong> Educational purposes only. I am not a lawyer, and this course is not legal advice. Results are not guaranteed. Always verify deadlines and local court rules.</p>
+  </div>
 </body>
 </html>
